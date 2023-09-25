@@ -5,13 +5,12 @@ using namespace std;
 int main() {
     
     srand(static_cast<unsigned int>(time(nullptr)));
-    int secretNumber = rand()%1000;
+    int secretNumber = rand()%100;
     
     int guess;
     int attempts = 0;
 
-    cout << "Welcome to the Guess the Number game!\n";
-    cout << "Try to guess it.\n";
+    cout << "Welcome to the Guess the Number game!\nNumbers are in the range 0-100\n";
 
     do {
         cout << "Enter your guess: ";
